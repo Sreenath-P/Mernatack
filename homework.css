@@ -1,0 +1,140 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.dash img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+.dash{
+    background-color: red;
+    font-weight: bold;
+    padding: 10px;
+    font-size: large;
+    height: 15%;
+    margin: 5px;
+}
+.dash span{
+    padding: 10px;
+    vertical-align: middle;
+    width: 20%;
+    height: 100%;
+}
+.img{
+    height: 35%;
+    padding: 10px;
+}
+.img span{
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.img img{
+    width: 240px;
+    height: 250px;
+}
+.final 
+{
+    height: 50%;
+    width: 100%;
+}
+.final img{
+    height: 350px;
+
+}
+.final span{
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.a{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background-color: red;
+}
+.b{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+.c{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px, -50px);
+    transform: scale(4,2);
+    transform: rotateZ(30deg);
+    transform: skew(20deg, 20deg);
+    transform: perspective(11vh) rotateZ(4);
+}
+button{
+    position: relative;
+    height: 3rem;
+    width: 6rem;
+}
+button::after{
+    content: "10";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 1rem;
+    width: 1rem;
+    background-color: aqua;
+    border-radius: 0.5rem;
+    transform: translate(50%,-50%);
+}
+p::first-line{
+    background-color: aliceblue;
+}
+p::first-letter{
+    background-color: yellow;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+p::selection{
+    color: green;
+    background-color: yellow;
+}
+li::marker{
+    color: antiquewhite;
+ } /* For ordered lists als0 */ 
+/* position: absolute, relative, static, sticky
+top 
+bottom
+left 
+right 
+inset */
+
+/* pseudo classes */
+button:hover{
+    background-color: greenyellow; 
+    transform: scale(1.2);
+}
+input:focus{
+    background-color: blueviolet;
+    outline: black 2px;
+}
+#ab:checked{
+    transform: translate(0,2rem);
+}
+input:disabled{
+    background-color: brown;
+}
+input:enabled{
+    background-color: skyblue;
+}
+/* p{
+    height: 20px;
+    width: 60px;
+}
+p:empty{
+    background-color: green;
+} */
